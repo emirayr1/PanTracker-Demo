@@ -72,10 +72,13 @@ def main():
         cv2.imshow("Takip Ediliyor...", frame)
         if cv2.waitKey(1) & 0xFF == 27: # ESC ile çık
             break
-        
+
     cap.release()
     cv2.destroyAllWindows()
     print(f"Takip tamamlandı. Toplam {len(frame_pan_values)} kare işlendi.")
+
+
+    ################# REWRITE ALL AUDIO PROCESS STUFF !!!! ######################
 
     # 2. SES İŞLEME VE SENKRONİZASYON
     print("Ses işleniyor...")
